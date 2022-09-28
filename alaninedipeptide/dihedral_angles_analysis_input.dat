@@ -1,0 +1,12 @@
+# compute torsional angle between atoms 17,15,9,7
+psi: TORSION ATOMS=17,15,9,7
+# compute torsional angle between atoms 5,7,9,15
+phi: TORSION ATOMS=5,7,9,15
+hlda: COMBINE ARG=phi,psi COEFFICIENTS=1.0,0.0 PERIODIC=-pi,pi
+
+#metad: METAD ...
+#ARG=hlda HEIGHT=1.2 BIASFACTOR=6 SIGMA=0.35 PACE=500 
+#GRID_MIN=-pi GRID_MAX=pi TEMP=300
+#CALC_RCT
+#...
+PRINT ARG=hlda,psi,phi STRIDE=1000 FILE=dihedrals
