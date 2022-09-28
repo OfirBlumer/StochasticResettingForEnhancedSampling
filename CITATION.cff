@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Here are example input files for the paper 'Stochastic resetting for enhanced sampling'."
+authors:
+- family-names: "Blumer"
+  given-names: "Ofir"
+- family-names: "Reuveni"
+  given-names: "Shlomi"
+- family-names: "Hirshberg"
+  given-names: "Barak"
+title: "Input files for 'Stochastic resetting for enhanced sampling'"
+date-released: 2022
+url: "https://github.com/OfirBlumer/StochasticResettingForEnhancedSampling"
