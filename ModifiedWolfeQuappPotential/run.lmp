@@ -17,7 +17,7 @@ fix           2  all langevin 300 300 100.0 7878229
 
 ###### Forces ######
 
-variable      A equal 0.89424  # 41 kbT for LAMMPS real units and a temperature of 300 K
+variable      A equal 0.89424  # 1.5 kbT for LAMMPS real units and a temperature of 300 K
 variable      fx atom (v_A/15)*(-4*(x/15)^3+4*(x/15)-y-1.5)
 variable      fy atom v_A*(-4*y^3+8*y-(x/15)-1.2)
 fix           forces all addforce v_fx v_fy 0.0
