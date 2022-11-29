@@ -23,7 +23,7 @@ variable      sigmaSquared equal 1.3^2
 variable      y1_2 equal 0.0
 variable      lambda1Squared equal 4000000
 variable      lambda2Squared equal 1.0
-variable      A equal 24.44  # 41 kbT for LAMMPS real units and a temperature
+variable      A equal 24.44  # 41 kbT for LAMMPS real units and a temperature of 300 K
 variable      exp1 atom v_A*exp(-((x-v_x1)^2)/(2*v_sigmaSquared)-((y-v_y1_2)^2)/(2*v_lambda1Squared))
 variable      exp2 atom v_A*exp(-((x-v_x2)^2)/(2*v_sigmaSquared)-((y-v_y1_2)^2)/(2*v_lambda2Squared))
 
